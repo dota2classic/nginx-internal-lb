@@ -20,4 +20,4 @@ jobs:
         uses: docker/build-push-action@v6.7.0
         with:
           push: true
-          tags: dota2classic/nginx:internal_lb
+          tags: dota2classic/nginx_internal_lb:latest
