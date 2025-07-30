@@ -4,7 +4,8 @@ FROM nginx:stable
 RUN rm /etc/nginx/conf.d/default.conf
 
 # Копируем собственный
-COPY nginx.conf /etc/nginx/conf.d/nginx.conf
+COPY nginx/conf.d/nginx.conf /etc/nginx/conf.d/nginx.conf
+COPY nginx/nginx.conf /etc/nginx/nginx.conf
 
 EXPOSE 80 443
 
